@@ -1,0 +1,100 @@
+==============================================================================
+  FLASH TOOL  v2.1    CHECK PARTITIONS
+==============================================================================
+    1. DA folder -> DA_BR.bin
+    2. Auth folder -> Sv6.auth  (optional)
+------------------------------------------------------------------------------
+
+  [1/2] Select DA folder -> DA_BR.bin
+  OK: "D:\Backup\MT6855.bin"
+
+  [2/2] Auth is optional.
+Type Y to select Auth folder -> Sv6.auth, or just press Enter to skip:
+  Auth skipped - continuing without it.
+
+Antumbra ✦  Waiting for MTK device...
+Antumbra ✦  Found MTK port: USB 0E8D:2000 (libusb)
+Antumbra ✦  =====================================
+Antumbra ✦  Chip: MT6855/MT6855G/MT6855V (Dimensity 930/7020/7025)
+Antumbra ✦  HW Code: 0x1129
+Antumbra ✦  HW Subcode: 0x8A00
+Antumbra ✦  SBC: true
+Antumbra ✦  SLA: false
+Antumbra ✦  DAA: true
+Antumbra ✦  =====================================
+Antumbra ✦  Retrieving partition information...
+Antumbra ✦  Partition Table:
+Antumbra ✦  Name: preloader                      Addr: 0x0000000000000000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA0
+Antumbra ✦  Name: preloader_backup               Addr: 0x0000000000000000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA1
+Antumbra ✦  Name: PGPT                           Addr: 0x0000000000000000        Size: 0x0000000000008000 (32 KiB)       Section: UFS-LUA2
+Antumbra ✦  Name: misc                           Addr: 0x0000000000008000        Size: 0x0000000000080000 (512 KiB)      Section: UFS-LUA2
+Antumbra ✦  Name: para                           Addr: 0x0000000000088000        Size: 0x0000000000080000 (512 KiB)      Section: UFS-LUA2
+Antumbra ✦  Name: expdb                          Addr: 0x0000000000108000        Size: 0x0000000008000000 (128 MiB)      Section: UFS-LUA2
+Antumbra ✦  Name: frp                            Addr: 0x0000000008108000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: nvcfg                          Addr: 0x0000000008208000        Size: 0x0000000002000000 (32 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: nvdata                         Addr: 0x000000000A208000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_a                       Addr: 0x000000000E208000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_system_a                Addr: 0x000000000EA08000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_vendor_a                Addr: 0x000000000F208000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_b                       Addr: 0x000000000FA08000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_system_b                Addr: 0x0000000010208000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vbmeta_vendor_b                Addr: 0x0000000010A08000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: metadata                       Addr: 0x0000000011208000        Size: 0x0000000002000000 (32 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: persist                        Addr: 0x0000000013208000        Size: 0x00000000035F8000 (54 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: protect1                       Addr: 0x0000000016800000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: protect2                       Addr: 0x0000000017000000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: seccfg                         Addr: 0x0000000017800000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: otp                            Addr: 0x0000000018000000        Size: 0x0000000003000000 (48 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: md1img_a                       Addr: 0x000000001B000000        Size: 0x000000000C800000 (200 MiB)      Section: UFS-LUA2
+Antumbra ✦  Name: spmfw_a                        Addr: 0x0000000027800000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: pi_img_a                       Addr: 0x0000000027900000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: dpm_a                          Addr: 0x0000000027A00000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: scp_a                          Addr: 0x0000000027E00000        Size: 0x0000000000600000 (6 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vcp_a                          Addr: 0x0000000028400000        Size: 0x0000000000600000 (6 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: sspm_a                         Addr: 0x0000000028A00000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: mcupm_a                        Addr: 0x0000000028B00000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: gpueb_a                        Addr: 0x0000000028C00000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: gz_a                           Addr: 0x0000000028D00000        Size: 0x0000000002000000 (32 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: lk_a                           Addr: 0x000000002AD00000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: boot_a                         Addr: 0x000000002B100000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: vendor_boot_a                  Addr: 0x000000002F100000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: init_boot_a                    Addr: 0x0000000033100000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: dtbo_a                         Addr: 0x0000000033900000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: tee_a                          Addr: 0x0000000034100000        Size: 0x0000000000500000 (5 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: sec1                           Addr: 0x0000000034600000        Size: 0x0000000000200000 (2 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: proinfo                        Addr: 0x0000000034800000        Size: 0x0000000000300000 (3 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: efuse                          Addr: 0x0000000034B00000        Size: 0x0000000000080000 (512 KiB)      Section: UFS-LUA2
+Antumbra ✦  Name: nvram                          Addr: 0x0000000034B80000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: boot_para                      Addr: 0x0000000038B80000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: dram_para                      Addr: 0x0000000038C80000        Size: 0x0000000001900000 (25 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: connsys_bt_a                   Addr: 0x000000003A580000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: connsys_wifi_a                 Addr: 0x000000003AD80000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: connsys_gnss_a                 Addr: 0x000000003B580000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: logo_a                         Addr: 0x000000003BD80000        Size: 0x0000000000A80000 (10.5 MiB)     Section: UFS-LUA2
+Antumbra ✦  Name: md1img_b                       Addr: 0x000000003C800000        Size: 0x000000000C800000 (200 MiB)      Section: UFS-LUA2
+Antumbra ✦  Name: spmfw_b                        Addr: 0x0000000049000000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: pi_img_b                       Addr: 0x0000000049100000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: dpm_b                          Addr: 0x0000000049200000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: scp_b                          Addr: 0x0000000049600000        Size: 0x0000000000600000 (6 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: vcp_b                          Addr: 0x0000000049C00000        Size: 0x0000000000600000 (6 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: sspm_b                         Addr: 0x000000004A200000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: mcupm_b                        Addr: 0x000000004A300000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: gpueb_b                        Addr: 0x000000004A400000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: gz_b                           Addr: 0x000000004A500000        Size: 0x0000000002000000 (32 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: lk_b                           Addr: 0x000000004C500000        Size: 0x0000000000400000 (4 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: boot_b                         Addr: 0x000000004C900000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: vendor_boot_b                  Addr: 0x0000000050900000        Size: 0x0000000004000000 (64 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: init_boot_b                    Addr: 0x0000000054900000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: connsys_bt_b                   Addr: 0x0000000055100000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: connsys_wifi_b                 Addr: 0x0000000055900000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: connsys_gnss_b                 Addr: 0x0000000056100000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: logo_b                         Addr: 0x0000000056900000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: dtbo_b                         Addr: 0x0000000057100000        Size: 0x0000000000800000 (8 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: tee_b                          Addr: 0x0000000057900000        Size: 0x0000000000700000 (7 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: super                          Addr: 0x0000000058000000        Size: 0x0000000300000000 (12 GiB)       Section: UFS-LUA2
+Antumbra ✦  Name: tkv_a                          Addr: 0x0000000358000000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: tkv_b                          Addr: 0x0000000358100000        Size: 0x0000000000100000 (1 MiB)        Section: UFS-LUA2
+Antumbra ✦  Name: tranfs                         Addr: 0x0000000358200000        Size: 0x0000000012E00000 (302 MiB)      Section: UFS-LUA2
+Antumbra ✦  Name: userdata                       Addr: 0x000000036B000000        Size: 0x00000073BFFF8000 (463 GiB)      Section: UFS-LUA2
+Antumbra ✦  Name: flashinfo                      Addr: 0x000000772AFF8000        Size: 0x0000000001000000 (16 MiB)       Section: UFS-LUA2
+Antumbra ✦  Name: SGPT                           Addr: 0x000000772BFF8000        Size: 0x0000000000008000 (32 KiB)       Section: UFS-LUA2
