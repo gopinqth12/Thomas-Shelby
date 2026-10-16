@@ -1,0 +1,62 @@
+==============================================================================
+  FLASH TOOL  v2.1    FIRMWARE UPGRADE
+==============================================================================
+    1. Scatter folder -> xml
+    2. Preloader folder -> bin
+    3. DA folder -> DA_BR.bin
+    4. Auth folder -> Sv6.auth  (optional)
+------------------------------------------------------------------------------
+
+  [1/4] Select scatter folder -> xml
+  OK: "D:\Backup\X6852-15.1.2.185SP01(OP001PF001AZ)\MT6855_Android_scatter.xml"
+
+  [2/4] Select preloader folder -> bin
+  OK: "D:\Backup\X6852-15.1.2.185SP01(OP001PF001AZ)\preloader_x6852_p775.bin"
+
+  [3/4] Select DA folder -> DA_BR.bin
+  OK: "D:\Backup\X6852-15.1.2.185SP01(OP001PF001AZ)\download_agent\DA_BR.bin"
+
+  [4/4] Auth is optional.
+Type Y to select Auth folder -> Sv6.auth, or just press Enter to skip:
+  Auth skipped - continuing without it.
+
+  This will FLASH the device.
+Type YES to continue: yes
+
+Antumbra ✦  Waiting for MTK device...
+Antumbra ✦  Found MTK port: USB 0E8D:2000 (libusb)
+Antumbra ✦  Initializing device...
+Antumbra ✦  Starting handshake...
+Antumbra ✦  Handshake completed!
+Antumbra ✦  =====================================
+Antumbra ✦  Chip: MT6855/MT6855G/MT6855V (Dimensity 930/7020/7025)
+Antumbra ✦  HW Code: 0x1129
+Antumbra ✦  HW Subcode: 0x8A00
+Antumbra ✦  SBC: true
+Antumbra ✦  SLA: false
+Antumbra ✦  DAA: true
+Antumbra ✦  =====================================
+Antumbra ✦  Uploading XML DA1 to address 0x02000000 with length 0x91F00
+Antumbra ✦  Sent DA1, jumping to address 0x02000000...
+Antumbra ✦  Uploading XML DA2 to address 0x40000000 with length 0x5AEB8
+Antumbra ✦  Successfully uploaded and booted to XML DA2
+Antumbra ✦  [Exploit] Device is vulnerable to HeapBait!
+Antumbra ✦  [Exploit] Sending Hakujoudai...
+Antumbra ✦  [Exploit] Hakujoudai landed (size: 0x5003B68 bytes)
+Antumbra ✦  [Exploit] Hakujoudai is haunting the heap @ 0x44800000
+Antumbra ✦  Patched DA SLA to accepy dummy auth.
+Antumbra ✦  Injected Ext-Loader to DA2 successfully.
+Antumbra ✦  Patched DA2 security policy!
+Antumbra ✦  Patched SBC to be disabled!
+Antumbra ✦  [Exploit] The heap took the bait. Enjoy ;)
+Antumbra ✦  DA SLA is enabled
+Antumbra ✦  No available signers for DA SLA, trying dummy signature...
+Antumbra ✦  DA SLA signature accepted (dummy)!
+Antumbra ✦  Trying to boot DA extensions...
+Antumbra ✦  Uploading XML DA extensions to 0x68000000 (0x1C39C bytes)
+Antumbra ✦  Successfully booted XML extensions
+Antumbra ✦  DA extensions uploaded
+Antumbra ✦  Retrieving partition information...
+Antumbra ✦  Flashing from scatter file D:\Backup\X6852-15.1.2.185SP01(OP001PF001AZ)\MT6855_Android_scatter.xml
+Antumbra ✦  [########################################] 9.89 GiB/9.89 GiB (5m / ETA: 0s, 30.82 MiB/s)
+Antumbra ✦  Successfully flashed from scatter file!
